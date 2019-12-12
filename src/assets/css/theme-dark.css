@@ -10954,3 +10954,17 @@ a:focus, button:focus {
 .select2-container--default .select2-selection--multiple,
 .select2-container--default .select2-search--dropdown .select2-search__field {
   border-color: #1E3A5C; }
+
+img.backbtn {
+  width: 50px;
+  z-index: 50;
+  position: relative;
+  top: 20px;
+  left: 20px; }
+
+img.backbtn-resp {
+  width: 30px;
+  z-index: 50;
+  position: relative;
+  top: 20px;
+  left: 20px; }

@@ -10903,3 +10903,17 @@ a:focus, button:focus {
 
 .is-invalid ~ .select2 .select2-selection {
   border-color: #E63757 !important; }
+
+img.backbtn {
+  width: 50px;
+  z-index: 50;
+  position: relative;
+  top: 20px;
+  left: 20px; }
+
+img.backbtn-resp {
+  width: 30px;
+  z-index: 50;
+  position: relative;
+  top: 20px;
+  left: 20px; }
