@@ -1,710 +1,234 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     @@include("partials/head.html", {
-      "title": "Dashkit"
+      "title": "Projet SHISEIDO"
     })
   </head>
   <body>
 
-    <!-- MODALS
-    ================================================== -->
-    @@include("partials/modals.html")
-
-    <!-- NAVIGATION
-    ================================================== -->
-    @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
-      @@if (sidebarSize == 'base' || demoMode) {
-        @@include("partials/sidebar.html", {
-          "category": "pages",
-          "subcategory": "project",
-          "page": "project-files.html"
-        })
-      }
-      @@if (sidebarSize == 'small' || demoMode) {
-        @@include("partials/sidebar-sm.html", {
-          "category": "pages",
-          "subcategory": "project",
-          "page": "project-files.html"
-        })
-      }
-    }
-    @@if (navPosition == 'topnav' || demoMode) {
-      @@include("partials/topnav.html", {
-        "category": "pages",
-        "subcategory": "project",
-        "page": "project-files.html"
-      })
-    }
-
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="main-content">
+    <div class="main-content pb-6">
 
-      @@if (navPosition == 'combo' || demoMode) {
-        @@include("partials/topbar.html")
-      }
+      <div class="container">
+        <a href="index.html" title="Retourner à l'accueil">
+          <img class="backbtn d-none d-md-block" src="assets/img/covers/back.png" alt="Retour Accueil">
+          <img class="backbtn-resp d-md-none" src="assets/img/covers/back.png" alt="Retour Accueil">
+        </a>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
 
-      <!-- HEADER -->
-      <div class="header">
-        <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
-          
-          <!-- Body -->
-          <div class="header-body">
-            <div class="row align-items-center">
-              <div class="col-auto">
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <!-- HEADER -->
+              <div class="header">
 
-                <!-- Avatar -->
-                <div class="avatar avatar-lg avatar-4by3">
-                  <img src="assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
-                </div>
-
-              </div>
-              <div class="col ml-n3 ml-md-n2">
-                
-                <!-- Pretitle -->
-                <h6 class="header-pretitle">
-                  Projects
-                </h6>
+                <!-- Image -->
+                <img src="assets/img/covers/shiseidologo3.png" class="header-img-top" alt="...">
+              <div class="header-body">
 
                 <!-- Title -->
-                <h1 class="header-title">
-                  Homepage Redesign
+                <h1 class="header-title display-4">
+                  CASE STUDY SHISEIDO
                 </h1>
 
               </div>
-              <div class="col-12 col-md-auto mt-3 mt-md-0">
-                
-                <!-- Avatar group -->
-                <div class="avatar-group">
-                  <a href="profile-posts.html" class="avatar" data-toggle="tooltip" title="Dianna Smiley">
-                    <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                  </a>
-                  <a href="profile-posts.html" class="avatar" data-toggle="tooltip" title="Ab Hadley">
-                    <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
-                  </a>
-                  <a href="profile-posts.html" class="avatar" data-toggle="tooltip" title="Adolfo Hess">
-                    <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
-                  </a>
-                  <a href="profile-posts.html" class="avatar" data-toggle="tooltip" title="Daniela Dewitt">
-                    <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
-                  </a>
-                </div>
+            </div>
 
-                <!-- Button -->
-                <a href="#modalMembers" class="btn btn-lg btn-rounded-circle btn-white lift" data-toggle="modal">
-                  +
-                </a>
+            <p>
+              <ul>
+                <li>Redesign Appli Shiseido,</li>
+                <li>Décembre 2019, 4 jours,</li>
+                <li>POP School.</li>
+              </ul>
+            </p>
 
-              </div>
-            </div> <!-- / .row -->
-            <div class="row align-items-center">
-              <div class="col">
-                
-                <!-- Nav -->
-                <ul class="nav nav-tabs nav-overflow header-tabs">
-                  <li class="nav-item">
-                    <a href="project-overview.html" class="nav-link">
-                      Overview
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="project-files.html" class="nav-link active">
-                      Files
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="project-reports.html" class="nav-link">
-                      Reports
-                    </a>
-                  </li>
-                </ul>
+            <div class="header mt-md-5">
+              <div class="header-body">
+
+                <!-- Title -->
+                <h2 class="header-title">
+                  Problématique
+                </h2>
 
               </div>
             </div>
-          </div>
 
-        </div>
-      </div> <!-- / .header -->
+            <p>
+              La marque Shiseido souhaite optimiser de manière urgente ces canaux de vente pour répondre aux tendances de shopping 2019.<br>
+              Shiseido estime que la plupart des ventes de fin d'année se concentrent sur les soins du visage.<br>
+              Les clients apprécient le fait de pouvoir tester en magasin et pouvoir bénéficier d'une réduction sur leur achat, quitte à devoir effectuer une action online pour en bénéficier (installation app native android).<br>
+              Une enquête d’Accenture a révélé que les consommateurs recherchaient un "commerce responsable", 45 % d'entre eux déclarant qu'ils seraient plus susceptibles de faire leurs achats chez des commerçants favorisant un développement social et environnemental responsable par le biais de leurs pratiques commerciales. La moitié d'entre eux a déclaré qu'ils seraient disposés à choisir des options de livraison ayant un impact moindre sur l'environnement, telle qu'une expédition plus lente ou un retrait en magasin.<br>
+              Jill Standish, directrice générale principale du commerce de détail chez Accenture, prédit la chose suivante pour les marques ecommerçantes concernant leurs engagements sociaux et environnementaux : "Ceux qui sont déjà sur cette voie pourraient avoir l'avantage sur leurs concurrents cette saison des fêtes et au-delà."
+            </p>
 
-      <!-- CONTENT -->
-      <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
-        <div class="row">
-          <div class="col-12">
-            
-            <!-- Files -->
-            <div class="card" data-toggle="lists" data-options='{"valueNames": ["name"]}'>
-              <div class="card-header">
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <div class="header-body">
+
+                <!-- Title -->
+                <h2 class="header-title">
+                  KPI , Project goals
+                </h2>
+
+              </div>
+            </div>
+
+            <p>
+              <ul>
+                <li>% des commandes avec retrait en magasin sur les 30 jours précédents Noël.</li>
+                <li>% des commandes avec livraison éco-responsable (empreinte carbone réduite) sur les 30 jours précédents Noël.</li>
+                <li>% des clients souscrivant au programme de fidélité.</li>
+              </ul>
+            </p>
+
+
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <div class="header-body">
+
+                <!-- Title -->
+                <h2 class="header-title">
+                  Démarche projet
+                </h2>
+
+              </div>
+            </div>
+
+            <p>
+              Voici comment nous avons travaillé sur ce projet :
+            </p>
+
+            <ol>
+              <li>Test d'empathie</li>
+              <li>Benchmark concurrents + positionnement de la marque</li>
+              <li>Customer journey + persona</li>
+              <li>Prototypage</li>
+              <li>Tests utilisateurse</li>
+              <li>Analyse + debrief + priorisation</li>
+              <li>Itération</li>
+
+            </ol>
+
+
+
+
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <div class="header-body">
+
+                <!-- Title -->
+                <h2 class="header-title">
+                  CPN: Comment pourrions-nous?
+                </h2>
+
+              </div>
+            </div>
+
+            <p>Voici les questions auxquelles nous avons essayé de répondre durant ce projet:</p>
+
+            <ul>
+              <li>Mettre les produits soins du visage en avant</li>
+              <li>Créer/Mettre en avant d’une gamme de Noel</li>
+              <li>Inciter à souscrire au programme fidélité</li>
+              <li>Proposer le click and collect</li>
+              <li>Proposer une livraison éco-responsable</li>
+            </ul>
+
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <div class="header-body">
+
+                <!-- Title -->
+                <h2 class="header-title">
+                  Rôle dans le projet
+                </h2>
+
+              </div>
+            </div>
+
+            <div class="card">
+              <a>
+                <img title="prise de notes pendant une interview" src="assets/img/covers/pop.jpg" alt="Photo salle de travail" class="card-img-top">
+              </a>
+              <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col">
-                    
-                    <!-- Title -->
-                    <h4 class="card-header-title">
-                      Files
-                    </h4>
 
-                  </div>
-                  <div class="col-auto">
-                    
-                    <!-- Dropdown -->
-                    <div class="dropdown">
+                    <p> Mon rôle : UX Designer. </p>
 
-                      <!-- Toggle -->
-                      <a href="#" class="small text-muted dropdown-toggle" data-toggle="dropdown">
-                        Sort order
-                      </a>
+                  </div></div>  </div></div>
 
-                      <!-- Menu -->
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item sort" data-sort="name" href="#!">
-                          Asc
-                        </a>
-                        <a class="dropdown-item sort" data-sort="name" href="#!">
-                          Desc
-                        </a>
-                      </div>
 
-                    </div>
-    
-                  </div>
-                  <div class="col-auto">
-                    
-                    <!-- Button -->
-                    <a href="#!" class="btn btn-sm btn-primary">
-                      Upload
-                    </a>
 
-                  </div>
-                </div> <!-- / .row -->
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <div class="header-body">
+
+                <!-- Title -->
+                <h2 class="header-title">
+                  Livrables
+                </h2>
               </div>
-              <div class="card-header">
-                <div class="row">
-                  <div class="col-12">
-                    
-                    <!-- Form -->
-                    <form>
-                      <div class="input-group input-group-flush input-group-merge">
-                        <input type="search" class="form-control form-control-prepended search" placeholder="Search">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">
-                            <span class="fe fe-search"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
 
-                  </div>
-                </div> <!-- / .row -->
-              </div>
-              <div class="card-body">
+            </div>
 
-                <!-- List -->
-                <ul class="list-group list-group-lg list-group-flush list my-n4">
-                  <li class="list-group-item px-0">
-                    
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        
-                        <!-- Avatar -->
-                        <a href="#!" class="avatar avatar-lg">
-                          <img src="assets/img/files/file-1.jpg" alt="..." class="avatar-img rounded">
-                        </a>
+            <p> Inter quos Paulus eminebat notarius ortus in Hispania, glabro quidam sub vultu latens, odorandi vias periculorum occultas perquam sagax. is in Brittanniam missus ut militares quosdam perduceret ausos conspirasse Magnentio, cum reniti non possent,
+              iussa licentius supergressus fluminis modo fortunis conplurium sese repentinus infudit et ferebatur per strages multiplices ac ruinas, vinculis membra ingenuorum adfligens et quosdam obterens manicis, crimina scilicet multa consarcinando a veritate longe discreta. unde admissum est facinus impium, quod Constanti tempus nota inusserat sempiterna.
+            </p>
 
-                      </div>
-                      <div class="col ml-n2">
+            <a>
+              <img title="Une vue d'ensemble du prototype" src="assets/img/covers/figmashiseido.png" alt="Prototypage figma" class="card-img-top">
+            </a>
 
-                        <!-- Title -->
-                        <h4 class="card-title mb-1 name">
-                          <a href="#!">Launchday Logo</a>
-                        </h4>
 
-                        <!-- Text -->
-                        <p class="card-text small text-muted mb-1">
-                          2.5kb SVG
-                        </p>
 
-                        <!-- Time -->
-                        <p class="card-text small text-muted">
-                          Uploaded by Dianna Smiley on <time datetime="2018-01-03">Jan 3, 2018</time>
-                        </p>
-                        
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Button -->
-                        <a href="#!" class="btn btn-sm btn-white d-none d-md-inline-block">
-                          Download
-                        </a>
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <div class="header-body">
 
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a href="#!" class="dropdown-item">
-                              Action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Another action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Something else here
-                            </a>
-                          </div>
-                        </div>
 
-                      </div>
-                    </div> <!-- / .row -->
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <div class="header-body">
 
-                  </li>
-                  <li class="list-group-item px-0">
-                    
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        
-                        <!-- Avatar -->
-                        <a href="#!" class="avatar avatar-lg">
-                          <img src="assets/img/files/file-2.jpg" alt="..." class="avatar-img rounded">
-                        </a>
-
-                      </div>
-                      <div class="col ml-n2">
-
-                        <!-- Title -->
-                        <h4 class="card-title mb-1 name">
-                          <a href="#!">Example Grid</a>
-                        </h4>
-
-                        <!-- Text -->
-                        <p class="card-text small text-muted mb-1">
-                          1.5mb PNG
-                        </p>
-
-                        <!-- Time -->
-                        <p class="card-text small text-muted">
-                          Uploaded by Dianna Smiley on <time datetime="2018-01-03">Jan 3, 2018</time>
-                        </p>
-                        
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Button -->
-                        <a href="#!" class="btn btn-sm btn-white d-none d-md-inline-block">
-                          Download
-                        </a>
-
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a href="#!" class="dropdown-item">
-                              Action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Another action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Something else here
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </li>
-                  <li class="list-group-item px-0">
-                    
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        
-                        <!-- Avatar -->
-                        <a href="#!" class="avatar avatar-lg">
-                          <span class="avatar-title rounded bg-white text-secondary">
-                            <span class="fe fe-folder"></span>
-                          </span>
-                        </a>
-
-                      </div>
-                      <div class="col ml-n2">
-
-                        <!-- Title -->
-                        <h4 class="card-title mb-1 name">
-                          <a href="#!">Screenshot Collection</a>
-                        </h4>
-
-                        <!-- Text -->
-                        <p class="card-text small text-muted mb-1">
-                          6.9mb directory
-                        </p>
-
-                        <!-- Time -->
-                        <p class="card-text small text-muted">
-                          Uploaded by Dianna Smiley on <time datetime="2018-01-03">Jan 3, 2018</time>
-                        </p>
-                        
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Button -->
-                        <a href="#!" class="btn btn-sm btn-white d-none d-md-inline-block">
-                          Download
-                        </a>
-
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a href="#!" class="dropdown-item">
-                              Action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Another action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Something else here
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </li>
-                  <li class="list-group-item px-0">
-                    
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        
-                        <!-- Avatar -->
-                        <a href="#!" class="avatar avatar-lg">
-                          <span class="avatar-title rounded bg-white text-secondary">
-                            <span class="fe fe-package"></span>
-                          </span>
-                        </a>
-
-                      </div>
-                      <div class="col ml-n2">
-
-                        <!-- Title -->
-                        <h4 class="card-title mb-1 name">
-                          <a href="#!">Database migration (compressed)</a>
-                        </h4>
-
-                        <!-- Text -->
-                        <p class="card-text small text-muted mb-1">
-                          5.9mb ZIP
-                        </p>
-
-                        <!-- Time -->
-                        <p class="card-text small text-muted">
-                          Uploaded by Dianna Smiley on <time datetime="2018-01-03">Jan 3, 2018</time>
-                        </p>
-                        
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Button -->
-                        <a href="#!" class="btn btn-sm btn-white d-none d-md-inline-block">
-                          Download
-                        </a>
-
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a href="#!" class="dropdown-item">
-                              Action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Another action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Something else here
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </li>
-                  <li class="list-group-item px-0">
-                    
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        
-                        <!-- Avatar -->
-                        <a href="#!" class="avatar avatar-lg">
-                          <img src="assets/img/files/file-3.jpg" alt="..." class="avatar-img rounded">
-                        </a>
-
-                      </div>
-                      <div class="col ml-n2">
-
-                        <!-- Title -->
-                        <h4 class="card-title mb-1 name">
-                          <a href="#!">Launchday Cover</a>
-                        </h4>
-
-                        <!-- Text -->
-                        <p class="card-text small text-muted mb-1">
-                          750kb JPG
-                        </p>
-
-                        <!-- Time -->
-                        <p class="card-text small text-muted">
-                          Uploaded by Dianna Smiley on <time datetime="2018-01-03">Jan 3, 2018</time>
-                        </p>
-                        
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Button -->
-                        <a href="#!" class="btn btn-sm btn-white d-none d-md-inline-block">
-                          Download
-                        </a>
-
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a href="#!" class="dropdown-item">
-                              Action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Another action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Something else here
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </li>
-                  <li class="list-group-item px-0">
-                    
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        
-                        <!-- Avatar -->
-                        <a href="#!" class="avatar avatar-lg">
-                          <span class="avatar-title rounded bg-white text-secondary">
-                            <span class="fe fe-film"></span>
-                          </span>
-                        </a>
-
-                      </div>
-                      <div class="col ml-n2">
-
-                        <!-- Title -->
-                        <h4 class="card-title mb-1 name">
-                          <a href="#!">Prototype Screencap</a>
-                        </h4>
-
-                        <!-- Text -->
-                        <p class="card-text small text-muted mb-1">
-                          23.5mb MOV
-                        </p>
-
-                        <!-- Time -->
-                        <p class="card-text small text-muted">
-                          Uploaded by Dianna Smiley on <time datetime="2018-01-03">Jan 3, 2018</time>
-                        </p>
-                        
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Button -->
-                        <a href="#!" class="btn btn-sm btn-white d-none d-md-inline-block">
-                          Download
-                        </a>
-
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a href="#!" class="dropdown-item">
-                              Action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Another action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Something else here
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </li>
-                  <li class="list-group-item px-0">
-                    
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        
-                        <!-- Avatar -->
-                        <a href="#!" class="avatar avatar-lg">
-                          <img src="assets/img/files/file-4.jpg" alt="..." class="avatar-img rounded">
-                        </a>
-
-                      </div>
-                      <div class="col ml-n2">
-
-                        <!-- Title -->
-                        <h4 class="card-title mb-1 name">
-                          <a href="#!">Header block example</a>
-                        </h4>
-
-                        <!-- Text -->
-                        <p class="card-text small text-muted mb-1">
-                          1.2mb PNG
-                        </p>
-
-                        <!-- Time -->
-                        <p class="card-text small text-muted">
-                          Uploaded by Dianna Smiley on <time datetime="2018-01-03">Jan 3, 2018</time>
-                        </p>
-                        
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Button -->
-                        <a href="#!" class="btn btn-sm btn-white d-none d-md-inline-block">
-                          Download
-                        </a>
-
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a href="#!" class="dropdown-item">
-                              Action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Another action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Something else here
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </li>
-                  <li class="list-group-item px-0">
-                    
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        
-                        <!-- Avatar -->
-                        <a href="#!" class="avatar avatar-lg">
-                          <span class="avatar-title rounded bg-white text-secondary">
-                            <span class="fe fe-pie-chart"></span>
-                          </span>
-                        </a>
-
-                      </div>
-                      <div class="col ml-n2">
-
-                        <!-- Title -->
-                        <h4 class="card-title mb-1 name">
-                          <a href="#!">User test results slides</a>
-                        </h4>
-
-                        <!-- Text -->
-                        <p class="card-text small text-muted mb-1">
-                          1.1mb PPTX
-                        </p>
-
-                        <!-- Time -->
-                        <p class="card-text small text-muted">
-                          Uploaded by Dianna Smiley on <time datetime="2018-01-03">Jan 3, 2018</time>
-                        </p>
-                        
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Button -->
-                        <a href="#!" class="btn btn-sm btn-white d-none d-md-inline-block">
-                          Download
-                        </a>
-
-                      </div>
-                      <div class="col-auto">
-                        
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-right">
-                            <a href="#!" class="dropdown-item">
-                              Action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Another action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Something else here
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-
-                  </li>
-                </ul>
+                <!-- Title -->
+                <h2 class="header-title">
+                  Apprentissage suite aux tests utilisateurs
+                </h2>
 
               </div>
             </div>
+
+            <p>
+              Nec sane haec sola pernicies orientem diversis cladibus adfligebat. Namque et Isauri, quibus est usitatum saepe pacari saepeque inopinis excursibus cuncta miscere,
+              ex latrociniis occultis et raris, alente inpunitate adulescentem in peius audaciam ad bella gravia proruperunt, diu quidem perduelles spiritus inrequietis motibus erigentes, hac tamen indignitate perciti vehementer, ut iactitabant, quod eorum capiti quidam consortes apud Iconium Pisidiae oppidum in amphitheatrali spectaculo feris praedatricibus obiecti sunt praeter morem.
+            </p>
+
+
+
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <div class="header-body">
+
+                <!-- Title -->
+                <h2 class="header-title">
+                  Conclusion
+                </h2>
+
+              </div>
+            </div>
+
+            <p>
+              Haec dum oriens diu perferret, caeli reserato tepore Constantius consulatu suo septies et Caesaris ter egressus Arelate Valentiam petit,
+              in Gundomadum et Vadomarium fratres Alamannorum reges arma moturus, quorum crebris excursibus vastabantur confines limitibus terrae Gallorum.
+            </p>
 
           </div>
         </div> <!-- / .row -->
       </div>
-      
+
     </div> <!-- / .main-content -->
 
     <!-- JAVASCRIPT
