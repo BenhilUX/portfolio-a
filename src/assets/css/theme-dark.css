@@ -10971,3 +10971,21 @@ img.backbtn-resp {
 
 .nav-link {
   color: #575757 !important; }
+
+#btn-vibrant {
+  cursor: pointer;
+  animation: clickMe 500ms linear infinite alternate;
+  transition: all 500ms linear; }
+
+#btn-vibrant:hover {
+  color: #0e76a8;
+  background-color: #ffffff;
+  animation-name: none; }
+
+@keyframes clickMe {
+  40% {
+    transform: scale(1) rotate(0); }
+  70% {
+    transform: scale(1.02) rotate(-1deg); }
+  100% {
+    transform: scale(1.05) rotate(1deg); } }
